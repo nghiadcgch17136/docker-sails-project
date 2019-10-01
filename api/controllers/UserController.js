@@ -11,7 +11,6 @@ module.exports = {
             if(err) throw err;
             res.send(JSON.stringify(user));
         }, trace => {console.log(trace)})
-        
     },
     add: (req, res) => {
         const {username} = req.body;
